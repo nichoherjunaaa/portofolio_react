@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #f3f3f3;
+    --text-color-light: #666666;
+    --text-color-lighter: #999999;
+    --text-color-lightest: #e59797;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo i {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color-light);
+
+    .primary {
+        color: var(--primary-color);
+    }
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-weight: 600;
+
+    &:hover {
+        color: var(--primary-color);
+        transition: color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.navbar .menu a.active {
+    color: var(--primary-color);
+}
+
+.navbar .menu .cart {
+    position: relative;
+}
+
+.navbar .menu .cart span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.navbar .contact-btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero .text {
+    max-width: 50%;
+}
+
+.hero .text h1 {
+    color: var(--secondary-color);
+    margin: 0;
+    font-size: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.hero .text h1 span {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+
+.hero .text p {
+    color: #666666;
+    margin: 20px 0;
+}
+
+.hero .text .buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero .text .buttons a {
+    padding: 15px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.hero .text .buttons .contact {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.hero .text .buttons .portfolio {
+    background-color: #f3f3f3;
+    color: var(--primary-color);
+}
+
+.hero .image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .image img {
+    border-radius: 50%;
+    border: 10px solid var(--primary-color);
+    width: 80%;
+
+}
